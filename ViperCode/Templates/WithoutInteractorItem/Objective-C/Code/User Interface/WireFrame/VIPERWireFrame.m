@@ -18,7 +18,7 @@
     id <VIPERInteractorInputProtocol> interactor = [VIPERInteractor new];
     id <VIPERAPIDataManagerInputProtocol> APIDataManager = [VIPERAPIDataManager new];
     id <VIPERLocalDataManagerInputProtocol> localDataManager = [VIPERLocalDataManager new];
-    id <VIPERWireFrameProtocol> wireFrame= [VIPERWireFrame new];
+    id <VIPERWireFrameProtocol> wireFrame = [VIPERWireFrame new];
 
     // Connecting
     view.presenter = presenter;

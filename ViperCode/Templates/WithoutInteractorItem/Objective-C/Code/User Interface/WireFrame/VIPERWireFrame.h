@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "VIPERProtocols.h"
 #import "VIPERViewController.h"
 #import "VIPERLocalDataManager.h"
@@ -14,7 +15,6 @@
 #import "VIPERInteractor.h"
 #import "VIPERPresenter.h"
 #import "VIPERWireframe.h"
-#import <UIKit/UIKit.h>
 
 @interface VIPERWireFrame : NSObject <VIPERWireFrameProtocol>
 
