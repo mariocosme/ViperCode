@@ -16,7 +16,7 @@ protocol VIPERViewProtocol: class {
 }
 
 protocol VIPERWireFrameProtocol: class {
-    static func presentVIPERModule(fromView view: AnyObject)
+    static func presentVIPERModule(fromView: AnyObject)
     /**
     * Add here your methods for communication PRESENTER -> WIREFRAME
     */

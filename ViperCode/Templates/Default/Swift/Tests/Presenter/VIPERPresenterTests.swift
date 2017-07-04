@@ -21,14 +21,17 @@ class AddPresenterTest: XCTestCase {
     }
 
     class MockInteractor: VIPERInteractorInputProtocol {
-
+        var presenter: VIPERModuleInteractorOutputProtocol?
+        var APIDataManager: VIPERModuleAPIDataManagerInputProtocol?
+        var localDatamanager: VIPERModuleLocalDataManagerInputProtocol?
     }
 
     class MockWireframe: VIPERWireFrameProtocol {
-
+        static func presentVIPERModuleModule(fromView: AnyObject) {}
     }
 
     class MockViewController: VIPERViewProtocol {
+        var presenter: VIPERModulePresenterProtocol?
 
         func setupInitialState() {
 

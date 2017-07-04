@@ -21,6 +21,8 @@ class AddInteractorTests: XCTestCase {
     }
 
     class MockPresenter: VIPERInteractorInputProtocol {
-
+        var presenter: VIPERModuleInteractorOutputProtocol?
+        var APIDataManager: VIPERModuleAPIDataManagerInputProtocol?
+        var localDatamanager: VIPERModuleLocalDataManagerInputProtocol?
     }
 }
