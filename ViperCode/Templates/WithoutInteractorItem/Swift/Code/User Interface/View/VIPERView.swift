@@ -11,4 +11,12 @@ import UIKit
 
 class VIPERViewController: UIViewController, VIPERViewProtocol {
     var presenter: VIPERPresenterProtocol?
+
+    // MARK: - Lifecycle functions
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+    // MARK: - Presenter functions
+
 }

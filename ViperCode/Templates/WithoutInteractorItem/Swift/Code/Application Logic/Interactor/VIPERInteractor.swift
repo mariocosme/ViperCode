@@ -14,5 +14,5 @@ class VIPERInteractor: VIPERInteractorInputProtocol {
     var APIDataManager: VIPERAPIDataManagerInputProtocol?
     var localDatamanager: VIPERLocalDataManagerInputProtocol?
 
-    init() {}
+    // MARK: - Presenter functions
 }
