@@ -9,5 +9,11 @@
 import Foundation
 
 class VIPERAPIDataManager: VIPERAPIDataManagerInputProtocol {
-    
+
+    deinit {
+        #if DEBUG
+    	   print("___FILENAME___ instance released")
+        #endif
+    }
+
 }

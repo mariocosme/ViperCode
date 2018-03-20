@@ -14,5 +14,11 @@ class VIPERInteractor: VIPERInteractorInputProtocol {
     var APIDataManager: VIPERAPIDataManagerInputProtocol?
     var localDatamanager: VIPERLocalDataManagerInputProtocol?
 
+    deinit {
+        #if DEBUG
+    	   print("___FILENAME___ instance released")
+        #endif
+    }
+
     // MARK: - Presenter functions
 }

@@ -13,6 +13,12 @@ class VIPERPresenter: VIPERPresenterProtocol, VIPERInteractorOutputProtocol {
     var interactor: VIPERInteractorInputProtocol?
     var wireFrame: VIPERWireFrameProtocol?
 
+    deinit {
+        #if DEBUG
+    	   print("___FILENAME___ instance released")
+        #endif
+    }
+
     // MARK: ViewController functions
 
 }

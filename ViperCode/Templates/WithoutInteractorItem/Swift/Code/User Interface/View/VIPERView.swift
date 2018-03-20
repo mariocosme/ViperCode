@@ -12,6 +12,12 @@ import UIKit
 class VIPERViewController: UIViewController, VIPERViewProtocol {
     var presenter: VIPERPresenterProtocol?
 
+    deinit {
+        #if DEBUG
+    	   print("___FILENAME___ instance released")
+        #endif
+    }
+
     // MARK: - Lifecycle functions
     override func viewDidLoad() {
         super.viewDidLoad()

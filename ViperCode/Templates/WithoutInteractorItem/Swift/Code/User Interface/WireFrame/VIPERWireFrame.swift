@@ -31,4 +31,10 @@ class VIPERWireFrame: VIPERWireFrameProtocol {
 
         //TODO: - Present interface(present, push)
     }
+
+    deinit {
+        #if DEBUG
+    	   print("___FILENAME___ instance released")
+        #endif
+    }
 }
